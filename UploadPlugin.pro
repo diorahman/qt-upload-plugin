@@ -1,9 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2013-08-17T23:09:57
-#
-#-------------------------------------------------
-
 QT       += network
 TEMPLATE = lib
 TARGET = UploadPlugin
