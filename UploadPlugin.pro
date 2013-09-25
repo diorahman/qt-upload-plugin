@@ -11,15 +11,15 @@ CONFIG += plugin
 CONFIG -= app_bundle
 version = 1.0.0
 
-INCLUDEPATH = ../DownloadHost/interfaces
-DESTDIR = ../DownloadHost/plugins
+ROOT = ../../../
+BIN = ../../bin
 
-HEADERS += \
-    uploadplugin.h \
-    ../DownloadHost/interfaces/uploader.h \
-    json.h
-
-SOURCES += \
-    uploadplugin.cpp \
+INCLUDEPATH = $$ROOT/interfaces
+DESTDIR = $$BIN
+MOC_DIR = moc
+OBJECTS_DIR = obj
+SOURCES += uploadplugin.cpp \
     json.cpp
-
+HEADERS += uploadplugin.h \
+    $$ROOT/interfaces/uploader.h \
+    json.h
